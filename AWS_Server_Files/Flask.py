@@ -47,7 +47,7 @@ def deticon(c):
 def mapview():
     centercoord=[37.337361,-121.882691]
     
-    path = "testdata.txt"
+    path = "MainTrigger.txt"
     set0=[]
     n=[]
     with open(path,'r') as f:
@@ -91,7 +91,7 @@ def mapview():
         style=("height:750px;" "width:80%;" "position:relative;")
 	)
     
-    path = "testdata1.txt"
+    path = "MainRoughness.txt"
     set1=[]
     n=[]
     with open(path,'r') as f:
