@@ -1,0 +1,14 @@
+#add this to WPA_Supplicant.conf in RPI to allow connection to WPA-EAP encrypted networks (not configured by RPI by default)
+
+network={
+        ssid="XXXXXXXX" #network name here
+        proto=RSN
+        key_mgmt=WPA-EAP
+        pairwise=CCMP
+        auth_alg=OPEN
+        eap=PEAP
+        identity="XXXXXXX"
+        password="XXXXX"
+        phase2="auth=MSCHAPV2"
+        priority=1
+}
